@@ -40,7 +40,8 @@ def main():
 	elif action == "3": 
 		add_crew_member() 
 	elif action == "4": 
-		print(f"Simulation ended. Final score: {score}") break 
+		print(f"Simulation ended. Final score: {score}") 
+		break 
 	else: 
 		print("Invalid action. Please try again.") 
 		
@@ -51,23 +52,35 @@ def main():
 		replenish_resources() 
 
 def display_status(): 
-# TODO: Implement function to display ship status, resources, and crew 
+	ship_power_supply = randint(1 , 100)
 
 def get_user_action(): 
-# TODO: Implement function to get and return user's chosen action 
+	useraction = input("What would you like to do Commander" + name)
+	return useraction
 
 def run_mission(): 
 	mission_type = random.choice(MISSION_TYPES) 
 	print(f"\nNew mission: {mission_type}") 
-	# TODO: Implement mission logic for different mission types 
-	# Return the score earned from the mission 
+Exploration: # next line
+	
 
 def repair_system(): 
 
-# TODO: Implement system repair functionality
+	outerforcefield = (randint(1, 100))
+	if outerforcefield == >=25:
+		print ("FORCEFIELD INTEGRITY CRITICAL! TEND TO IMMDEIATELY!")
+	elif outerforcefield == 26=<50:
+		print ("Forcefield integrity approaching critical state. Please tend to as soon as possible.")
+	elif outerforcefield == 51=<75:
+		print ("Forcefield integrity healthy. Do not forget to recharge when not in use.")
+	else:
+		print ("Forcefield integrity is safe. No need to recharge currently.")
+	
+	enginesystem = (randint(1, 100))
+	if enginesystem == 
  
 def add_crew_member(): 
-# TODO: Implement functionality to add a new crew member 
+
 
 def handle_random_event():
 # TODO: Implement random events that can occur during the simulation 
@@ -76,6 +89,4 @@ def use_resource(resource, amount):
 # TODO: Implement resource usage logic 
 
 def replenish_resources(): 
-# TODO: Implement resource replenishment logic 
 
-main()
